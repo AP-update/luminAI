@@ -54,19 +54,19 @@ python luminai.py
 
 ---
 
-💬 CONTOH PERCAKAPAN
+## 💬 CONTOH PERCAKAPAN
 
 Kamu     : Halo, LuminAI!
-LuminAI  : Hai! Ada yang bisa aku bantu hari ini?
+<p> LuminAI  : Hai! Ada yang bisa aku bantu hari ini?</p>
 
 
 ---
 
-🙌 CREDITS
+## 🙌 CREDITS
 
 Author: AP
 
-API: Siputzx
+<p>API: Siputzx</p>
 
 
 
