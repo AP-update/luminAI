@@ -45,7 +45,7 @@
 <h1>💬 CONTOH PERCAKAPAN</h1>
 
 Kamu : Halo, LuminAI!
-<p>LuminAI   : Hai! Ada yang bisa aku bantu hari ini?</p>p>
+<p>LuminAI   : Hai! Ada yang bisa aku bantu hari ini?</p>
 
 
 ---
