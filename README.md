@@ -32,8 +32,8 @@
 
 4. CLONE REPOSITORI LuminAI
 
-*git clone https://github.com/AP-update/luminAI
-cd luminAI*
+*git clone https://github.com/AP-update/luminAI*
+<p>*cd luminAI*</p>
 
 6. JALANKAN CHATBOT
 
@@ -45,7 +45,7 @@ cd luminAI*
 <h1>💬 CONTOH PERCAKAPAN</h1>
 
 Kamu : Halo, LuminAI!
-LuminAI   : Hai! Ada yang bisa aku bantu hari ini?
+<p>LuminAI   : Hai! Ada yang bisa aku bantu hari ini?</p>p>
 
 
 ---
@@ -54,6 +54,6 @@ LuminAI   : Hai! Ada yang bisa aku bantu hari ini?
 
 Dibuat oleh: AP-update
 
-API oleh: Siputzx
+<p>API oleh: Siputzx</p>
 
 
