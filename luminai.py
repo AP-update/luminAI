@@ -2,11 +2,16 @@ import requests
 import json
 import time
 import sys
+import base64
 
 chat_history = []
 
+def get_url():
+    encoded = "aHR0cHM6Ly9sdW1pbmFpLm15LmlkLw=="
+    return base64.b64decode(encoded).decode('utf-8')
+
 def kirim_ke_luminai(pesan):
-    url = 'https://luminai.my.id/'
+    url = get_url()
     headers = {
         'Content-Type': 'application/json; charset=utf-8'
     }
@@ -35,14 +40,14 @@ def efek_ketik(teks, delay=0.02):
         sys.stdout.write(char)
         sys.stdout.flush()
         time.sleep(delay)
-    print()  # baris baru
+    print()
 
 def mulai_chat():
-    print("\033[93m" + "=" * 60)
-    print("Selamat datang di obrolan bersama LuminAI!")
-    print("Script by AP | Didukung oleh API LuminAI milik siputz")
-    print("Ketik 'keluar' untuk mengakhiri obrolan.")
-    print("=" * 60 + "\033[0m")
+    encoded_text = (
+        "PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQ0KU2VsYW1hdCBkYXRhbmcgZGkgb2Jyb2xhbiBiZXJzYW1hIEx1bWluQUkhDQpTY3JpcHQgYnkgQVAgfCBEaWR1a3VuZ2kgb2xlaCBBUEkgTHVtaW5BSSBtaWxpayBzaXB1dHpNCktldGlrICdrZWx1YXInIHVudHVrIG1lbmdha2hpcmkgb2Jyb2xhbi4NCj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQ=="
+    )
+    decoded_text = base64.b64decode(encoded_text).decode("utf-8")
+    print("\033[93m" + decoded_text + "\033[0m")
 
     idle_start = time.time()
 
@@ -64,11 +69,11 @@ def mulai_chat():
         idle_start = time.time()
 
         print("\033[90mLuminAI sedang mengetik...\033[0m", end="\r")
-        time.sleep(1.2)  # Delay buat efek ngetik
+        time.sleep(1.2)
 
         balasan = kirim_ke_luminai(user_input)
 
-        print(" " * 50, end="\r")  # Clear typing indicator
+        print(" " * 50, end="\r")
         print("\033[92mLuminAI:\033[0m ", end="")
         efek_ketik(balasan)
         print("\033[90m" + "-" * 60 + "\033[0m")
