@@ -1,57 +1,59 @@
-LuminAI – Chatbot AI via Termux (Python Based)
+<h1 align="center">🤖 LuminAI – Chatbot AI via Termux</h1><p align="center"><em>Chatbot AI ringan berbasis Python yang berjalan langsung di Termux Android</em></p>
+---
 
-LuminAI adalah chatbot AI sederhana yang berjalan di Termux menggunakan Python. Cocok buat kamu yang ingin ngobrol dengan AI langsung dari terminal Android.
+✨ FITUR UTAMA
 
-Fitur
+>> Ringan dan cepat
 
-Ringan dan cepat
+>> Berjalan langsung di Termux (Android)
 
-Berjalan langsung di Termux (Android)
-
-Dibuat dengan Python
-
-
-Panduan Lengkap (Untuk Pengguna Baru Termux)
-
-1. Install Termux
-Unduh dan pasang Termux dari F-Droid atau Play Store
+>> Dibuat dengan Python
 
 
-2. Update dan Upgrade Termux
-Buka Termux dan jalankan:
+---
+
+⚙️ PANDUAN INSTALASI (UNTUK PENGGUNA BARU TERMUX)
+
+1. INSTALL TERMUX
+
+Unduh Termux dari F-Droid atau Play Store.
+
+2. UPDATE & UPGRADE TERMUX
 
 pkg update && pkg upgrade -y
 
-
-3. Install Git dan Python
+3. INSTALL GIT & PYTHON
 
 pkg install git python -y
 
-
-4. Clone repositori LuminAI
+4. CLONE REPOSITORI LuminAI
 
 git clone https://github.com/AP-update/luminAI
 cd luminAI
 
-
-5. Install library Python yang dibutuhkan
+5. INSTALL LIBRARY PYTHON
 
 pip install requests
 
-
-6. Jalankan chatbot
+6. JALANKAN CHATBOT
 
 python luminai.py
 
 
+---
 
-Contoh Percakapan
+💬 CONTOH PERCAKAPAN
 
 Kamu : Halo, LuminAI!
-LuminAI  : Hai! Ada yang bisa aku bantu hari ini?
+LuminAI   : Hai! Ada yang bisa aku bantu hari ini?
 
-Credits
+
+---
+
+🙌 CREDITS
 
 Dibuat oleh: AP-update
 
 API oleh: Siputzx
+
+
